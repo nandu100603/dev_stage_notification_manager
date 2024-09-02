@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" >
+document.addEventListener('DOMContentLoaded', function() {
+    const login_submit = document.getElementById("login_submit");
+    const input1 = document.getElementById("username");
+    const input2 = document.getElementById("password");
+    const baseUrl = window.location.origin;
+    login_submit.addEventListener('click',handleSubmit)
+    function handleSubmit(event){
+        var Data = {
+            "username" : input1.value,
+            "password": input2.value
+        }
+        fetch(`${baseUrl}/perform_login`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(Data)
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(responseData => {
+            console.log('Success:', responseData);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+})
+    </script>
+    <style>
+        .login_form {
+            display: flex;
+            flex-direction: column;
+            min-width: 25%;
+            max-width: 70%;
+        }
+
+        .login_form > input{
+            margin-bottom: 10px;
+        }
+        .login_form > label{
+            margin-bottom: 10px;
+        }
+        .form_container{
+            margin-top: 20vh;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="form_container">
+        <div  method="post" class="login_form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+            <label for="username">Password</label>
+            <input type="password" id="password" name="password">
+            <button id="login_submit">Login</button>
+        </div>
+    </div>
+</body>
+</html>
