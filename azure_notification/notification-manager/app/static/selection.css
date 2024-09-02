@@ -1,0 +1,194 @@
+body {
+    background-color: #0E0432;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#extra-input {
+    resize: none;
+    height: 150px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    background-color: #140B37; /* Adjust this as needed */
+    color: white;
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.right-content > div {
+    display: flex;
+    align-items: center;
+}
+
+.right-content svg {
+    margin-right: 20px;
+}
+
+.right-content .username {
+    margin-right: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+    padding-left: 60px;
+    margin: 20px 0;
+}
+
+label {
+    color: white;
+    padding-left: 60px;
+}
+
+#csv-upload-container {
+    color: white;
+}
+
+#templateDropdown {
+    padding: 10px; /* Adjust padding to center the arrow */
+    margin: 1px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #342D4F;
+    color: #fffafa;
+    height: 40px; /* Increase height to ensure the arrow is centered */
+    width: 40px; /* Adjust width as needed */    
+    appearance: none; /* Remove default styling in modern browsers */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"><polygon points="0,0 16,0 8,8"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px 15px;
+}
+
+#options {
+    height: 35px;
+    width: 100px;
+    background-color: #342D4F;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.header-inputs input, .header-inputs textarea, #extra-input {
+    padding: 12px 20px;
+    margin: 40px 0px 0px 60px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #342D4F;
+    color: #FFFFFF;
+    width: 600px;
+    margin-left: 60px;
+}
+
+#title {
+    width: 553px;
+}
+
+.header-inputs textarea {
+    resize: none;
+    height: 100px;
+    margin: 30px 0px 0px 60px;
+    padding-top: 30px;
+}
+
+.options_container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 5px 5px 20px;
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 150px; /* Adjust width as needed */
+    border-radius: 8px;
+    background-color: #342d4f;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+#send-button {
+    background: NONE;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+    height: 50px;
+    padding-right: 50px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-left: 30px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+#send-button img {
+    width: 100px;
+    height: 100px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.back-btn {
+    font-size: 16px;
+    color: white;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.header-inputs-and-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.header-inputs-container {
+    flex: 2;
+}
+
+.info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+   
+    background-color: black;
+    margin-right: 20px;
+    padding-left: 10px;
+    
+    
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #342D4F;
+    color: #FFFFFF;
+}
+
+.info-box {
+    margin-bottom: 10px;
+    color: aliceblue;
+}

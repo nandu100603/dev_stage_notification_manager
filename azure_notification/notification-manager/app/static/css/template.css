@@ -1,0 +1,173 @@
+body {
+    background-color: #0E0432;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+#body{
+    margin-top: 10px;
+    margin-left: 44px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    background-color: #140B37; /* Adjust this as needed */
+    color: white;
+}
+svg{
+    color: white;
+}
+
+#inserting{
+    background-color: rgb(95, 235, 7);
+    color: white;
+    border: none;
+    margin: 30px 0px 0px 30px;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+}
+#inserting:hover{
+    cursor: pointer;
+    background-color: rgb(51, 149, 12);
+    color: azure;
+}
+
+.back-btn {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 5px 5px 5px;
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 80px; /* Adjust width as needed */
+    border-radius: 8px;
+    background-color: #342d4f;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    cursor: pointer;
+    width: 100px;
+  }
+
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.right-content > div {
+    display: flex;
+    align-items: center;
+}
+
+.right-content svg {
+    margin-right: 20px;
+}
+
+.right-content .username {
+    margin-right: 20px;
+}
+
+h2{
+    color: white;
+    margin-left: 20px;
+}
+.coll-container{
+   margin: 200px 200px 200px 200px;
+}
+body.body{
+    margin: 200px 200px 200px 200px;
+}
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin: 0px 0px 10px 20px;
+    width: 600px;
+    
+}
+
+.collapsible:hover {
+    background-color: #555;
+}
+
+.collapsible-content {
+    margin-bottom: 10px;
+    margin-left:20px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: 590px;
+    padding-left: 10px;
+}
+label{
+    color: white;
+    margin-left: 20px;
+}
+select{
+    width: 100px;
+}
+input, textarea{
+    background-color: #342d4f;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 40px 0px 0px 30px;
+    color: white;
+    width: 600px;
+    resize: none;
+}
+textarea{
+    height: 120px;
+}
+#op{
+    background-color:#342D4F ;
+    color: white;
+    border-radius: 5px;
+    
+}
+#templateDropdown{
+    padding: 10px; /* Adjust padding to center the arrow */
+    margin: 1px 0;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    background-color: #342D4F;
+    color: #fffafa;
+    height: 40px; /* Increase height to ensure the arrow is centered */
+    width: 40px; /* Adjust width as needed */    
+    appearance: none; /* Remove default styling in modern browsers */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"><polygon points="0,0 16,0 8,8"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    
+}
+.delete{
+    background-color: #e50914;
+    color: white;
+    height: 30px;
+    width: 80px;
+    margin: 0px 0px 10px 500px;
+    border: none;
+    border-radius: 3px;
+}
+.delete:disabled{
+    background-color: #777;
+    color: black;
+}
