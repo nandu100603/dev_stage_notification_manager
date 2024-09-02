@@ -1,0 +1,6 @@
+flask
+firebase_admin
+flask-SQLAlchemy
+flask_migrate
+flask_login
+pymysql
